@@ -14,18 +14,18 @@ body {
 
 h3 {
   margin: 0;
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
 
 h5 {
   margin: 0;
-  font-size: 1.25em;
+  font-size: 1.0em;
   font-weight: normal;
 }
 
 h6 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 .intro-popup .leaflet-popup-tip-container {
