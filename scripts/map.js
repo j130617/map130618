@@ -816,9 +816,9 @@ $(window).on('load', function() {
             line.bindPopup(p[index]['Description']);
           }
 
-          if (p[index]['Location'] && p[index]['Location'] != '') {
-            line.bindPopup(p[index]['Location']);
-          }
+          //if (p[index]['Location'] && p[index]['Location'] != '') {
+            //line.bindPopup(p[index]['Location']);
+          //}
           
           polylinesLegend.addOverlay(line,
             '<i class="color-line" style="background-color:' + p[index]['Color']
