@@ -26,7 +26,7 @@ $(window).on('load', function() {
   /**
    * Sets the map view so that all markers are visible, or
    * to specified (lat, lon) and zoom if all three are specified
-   
+   */
   function centerAndZoomMap(points) {
     var lat = map.getCenter().lat, latSet = false;
     var lon = map.getCenter().lng, lonSet = false;
@@ -60,7 +60,7 @@ $(window).on('load', function() {
 
     map.setView(center, zoom);
   }
-  */
+
 
   /**
    * Given a collection of points, determines the layers based on 'Group'
@@ -612,8 +612,7 @@ $(window).on('load', function() {
       polygonSheets++;
     }
 
-    // original code, getting title from google sheet --> document.title = getSetting('_mapTitle');
-    document.title = 'map130618';
+    document.title = getSetting('_mapTitle');
     addBaseMap();
 
     // Add point markers to the map
@@ -676,8 +675,7 @@ $(window).on('load', function() {
         keepCurrentZoomLevel: true,
         returnToPrevBounds: true,
         position: getSetting('_mapMyLocation')
-
-     }).addTo(map);
+      }).addTo(map);
     }
 
     // Add zoom control
@@ -759,8 +757,7 @@ $(window).on('load', function() {
     var dispTitle = getSetting('_mapTitleDisplay');
 
     if (dispTitle !== 'off') {
-      //original code, getting title from google sheet --> var title = '<h3 class="pointer">' + getSetting('_mapTitle') + '</h3>';
-      var title = '<h3 class="pointer">' + 'map130618' + '</h3>';
+      var title = '<h3 class="pointer">' + getSetting('_mapTitle') + '</h3>';
       var subtitle = '<h5>' + getSetting('_mapSubtitle') + '</h5>';
 
       if (dispTitle == 'topleft') {
@@ -842,8 +839,7 @@ $(window).on('load', function() {
 
               // Add map title if set to be displayed in polylines legend
               if (getSetting('_mapTitleDisplay') == 'in polylines legend') {
-                //original code, getting title from google sheet --> var title = '<h3>' + getSetting('_mapTitle') + '</h3>';
-                var title = '<h3>' + 'map130618' + '</h3>';
+                var title = '<h3>' + getSetting('_mapTitle') + '</h3>';
                 var subtitle = '<h6>' + getSetting('_mapSubtitle') + '</h6>';
                 $('#polylines-legend').prepend(title + subtitle);
               }
