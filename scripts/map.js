@@ -676,7 +676,8 @@ $(window).on('load', function() {
         keepCurrentZoomLevel: true,
         returnToPrevBounds: true,
         position: getSetting('_mapMyLocation')
-      }).addTo(map);
+
+     }).addTo(map);
     }
 
     // Add zoom control
