@@ -612,7 +612,7 @@ $(window).on('load', function() {
       polygonSheets++;
     }
 
-    document.title = getSetting('_mapTitle');
+    document.title = 'map130618';
     addBaseMap();
 
     // Add point markers to the map
@@ -752,7 +752,7 @@ $(window).on('load', function() {
 
   /**
    * Adds title and subtitle from the spreadsheet to the map
-   */
+   
   function addTitle() {
     var dispTitle = getSetting('_mapTitleDisplay');
 
@@ -770,7 +770,7 @@ $(window).on('load', function() {
       $('.map-title h3').click(function() { location.reload(); });
     }
   }
-
+ */
 
   /**
    * Adds polylines to the map
