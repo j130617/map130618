@@ -672,11 +672,11 @@ $(window).on('load', function() {
 
     // Add location control
     // if (getSetting('_mapMyLocation') !== 'off') {
-      var locationControl = L.control.locate({
-        keepCurrentZoomLevel: true,
-        returnToPrevBounds: true,
-        position: 'topleft' //getSetting('_mapMyLocation')
-      }).addTo(map);
+    var locationControl = L.control.locate({
+      keepCurrentZoomLevel: true,
+      returnToPrevBounds: true,
+      position: 'topleft' //getSetting('_mapMyLocation')
+    }).addTo(map);
     }
 
     // Add zoom control
