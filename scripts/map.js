@@ -770,7 +770,7 @@ $(window).on('load', function() {
       $('.map-title h3').click(function() { location.reload(); });
     }
   }
- */
+ 
 
   /**
    * Adds polylines to the map
