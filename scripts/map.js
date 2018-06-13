@@ -33,20 +33,20 @@ $(window).on('load', function() {
     var zoom = 12, zoomSet = false;
     var center;
 
-    if (getSetting('_initLat') !== '') {
-      lat = getSetting('_initLat');
-      latSet = true;
-    }
+    //if (getSetting('_initLat') !== '') {
+      //lat = getSetting('_initLat');
+      //latSet = true;
+    //}
 
-    if (getSetting('_initLon') !== '') {
-      lon = getSetting('_initLon');
-      lonSet = true;
-    }
+    //if (getSetting('_initLon') !== '') {
+      //lon = getSetting('_initLon');
+      //lonSet = true;
+    //}
 
-    if (getSetting('_initZoom') !== '') {
-      zoom = parseInt(getSetting('_initZoom'));
-      zoomSet = true;
-    }
+    //if (getSetting('_initZoom') !== '') {
+      //zoom = parseInt(getSetting('_initZoom'));
+      //zoomSet = true;
+    //}
 
     if ((latSet && lonSet) || !points) {
       center = L.latLng(lat, lon);
