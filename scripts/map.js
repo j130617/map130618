@@ -752,7 +752,7 @@ $(window).on('load', function() {
 
   /**
    * Adds title and subtitle from the spreadsheet to the map
-   
+   */
   function addTitle() {
     var dispTitle = getSetting('_mapTitleDisplay');
 
