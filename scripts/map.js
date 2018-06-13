@@ -612,7 +612,8 @@ $(window).on('load', function() {
       polygonSheets++;
     }
 
-    document.title = getSetting('_mapTitle');
+    //document.title = getSetting('_mapTitle');
+    document.title = 'Gelukt';
     addBaseMap();
 
     // Add point markers to the map
@@ -757,7 +758,8 @@ $(window).on('load', function() {
     var dispTitle = getSetting('_mapTitleDisplay');
 
     if (dispTitle !== 'off') {
-      var title = '<h3 class="pointer">' + getSetting('_mapTitle') + '</h3>';
+      //var title = '<h3 class="pointer">' + getSetting('_mapTitle') + '</h3>';
+      var title = '<h3 class="pointer">' + 'Gelukt' + '</h3>';
       var subtitle = '<h5>' + getSetting('_mapSubtitle') + '</h5>';
 
       if (dispTitle == 'topleft') {
@@ -839,7 +841,8 @@ $(window).on('load', function() {
 
               // Add map title if set to be displayed in polylines legend
               if (getSetting('_mapTitleDisplay') == 'in polylines legend') {
-                var title = '<h3>' + getSetting('_mapTitle') + '</h3>';
+                //var title = '<h3>' + getSetting('_mapTitle') + '</h3>';
+                var title = '<h3>' + 'Gelukt' + '</h3>';
                 var subtitle = '<h6>' + getSetting('_mapSubtitle') + '</h6>';
                 $('#polylines-legend').prepend(title + subtitle);
               }
