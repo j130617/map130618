@@ -977,8 +977,7 @@ $(window).on('load', function() {
          // Options.csv does not exist, so use Tabletop to fetch data from
          // the Google sheet
          mapData = Tabletop.init({
-           key: data.xlsx,
-           //key: googleDocURL,
+           key: googleDocURL,
            callback: function(data, mapData) { onMapDataLoad(); }
          });
        },
