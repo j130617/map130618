@@ -26,7 +26,7 @@ $(window).on('load', function() {
   /**
    * Sets the map view so that all markers are visible, or
    * to specified (lat, lon) and zoom if all three are specified
-   
+  */ 
   function centerAndZoomMap(points) {
     var lat = map.getCenter().lat, latSet = false;
     var lon = map.getCenter().lng, lonSet = false;
@@ -60,7 +60,7 @@ $(window).on('load', function() {
 
     map.setView(center, zoom);
   }
-  */
+  
 
   /**
    * Given a collection of points, determines the layers based on 'Group'
