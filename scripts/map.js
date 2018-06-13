@@ -671,11 +671,11 @@ $(window).on('load', function() {
     }
 
     // Add location control
-    if (getSetting('_mapMyLocation') !== 'off') {
+    // if (getSetting('_mapMyLocation') !== 'off') {
       var locationControl = L.control.locate({
         keepCurrentZoomLevel: true,
         returnToPrevBounds: true,
-        position: getSetting('_mapMyLocation')
+        position: topright //getSetting('_mapMyLocation')
       }).addTo(map);
     }
 
