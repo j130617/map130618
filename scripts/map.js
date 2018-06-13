@@ -26,27 +26,27 @@ $(window).on('load', function() {
   /**
    * Sets the map view so that all markers are visible, or
    * to specified (lat, lon) and zoom if all three are specified
-  */ 
+   */
   function centerAndZoomMap(points) {
-    //var lat = map.getCenter().lat, latSet = false;
-    //var lon = map.getCenter().lng, lonSet = false;
-    //var zoom = 12, zoomSet = false;
-    //var center;
+    var lat = map.getCenter().lat, latSet = false;
+    var lon = map.getCenter().lng, lonSet = false;
+    var zoom = 12, zoomSet = false;
+    var center;
 
-    //if (getSetting('_initLat') !== '') {
-      //lat = getSetting('_initLat');
-      //latSet = true;
-    //}
+    if (getSetting('_initLat') !== '') {
+      lat = getSetting('_initLat');
+      latSet = true;
+    }
 
-    //if (getSetting('_initLon') !== '') {
-      //lon = getSetting('_initLon');
-      //lonSet = true;
-    //}
+    if (getSetting('_initLon') !== '') {
+      lon = getSetting('_initLon');
+      lonSet = true;
+    }
 
-    //if (getSetting('_initZoom') !== '') {
-      //zoom = parseInt(getSetting('_initZoom'));
-      //zoomSet = true;
-    //}
+    if (getSetting('_initZoom') !== '') {
+      zoom = parseInt(getSetting('_initZoom'));
+      zoomSet = true;
+    }
 
     if ((latSet && lonSet) || !points) {
       center = L.latLng(lat, lon);
@@ -60,7 +60,7 @@ $(window).on('load', function() {
 
     map.setView(center, zoom);
   }
-  
+
 
   /**
    * Given a collection of points, determines the layers based on 'Group'
@@ -612,7 +612,7 @@ $(window).on('load', function() {
       polygonSheets++;
     }
 
-    document.title = 'map130618';
+    document.title = getSetting('_mapTitle');
     addBaseMap();
 
     // Add point markers to the map
@@ -770,7 +770,7 @@ $(window).on('load', function() {
       $('.map-title h3').click(function() { location.reload(); });
     }
   }
- 
+
 
   /**
    * Adds polylines to the map
