@@ -675,7 +675,7 @@ $(window).on('load', function() {
       var locationControl = L.control.locate({
         keepCurrentZoomLevel: true,
         returnToPrevBounds: true,
-        position: bottomright //getSetting('_mapMyLocation')
+        position: 'topleft' //getSetting('_mapMyLocation')
       }).addTo(map);
     }
 
